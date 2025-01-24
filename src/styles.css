@@ -2,6 +2,12 @@ body {
   font-family: "poppins", sans-serif;
   background-color: black;
 }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url("../images/martinique.png");
@@ -49,8 +55,59 @@ header a {
 }
 
 footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/martinique-anse-michel-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
-  text-align: center;
+  padding: 100px 171px;
+  text-align: left;
+}
+
+section {
+  max-width: 1200px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 3fr 5fr 5fr;
+}
+
+footer h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  list-style: none;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+footer a.social-link {
+  text-decoration: underline;
+}
+
+footer p {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.9;
 }
 
 @media (max-width: 900px) {
@@ -65,5 +122,18 @@ footer {
   }
   header h2 {
     font-size: 15px;
+  }
+  header a {
+    font-size: 7px;
+    letter-spacing: 1.5px;
+    padding: 6px 8px;
+  }
+  footer {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .grid {
+    gap: 0;
+    grid-template-columns: 1fr;
   }
 }
