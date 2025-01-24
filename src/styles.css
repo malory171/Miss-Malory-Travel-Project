@@ -1,6 +1,69 @@
-h1 {
-  font-family: Poppins;
-  font-size: 65px;
+body {
+  font-family: "poppins", sans-serif;
+  background-color: black;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("../images/martinique.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 180px 190px;
+  text-align: center;
+}
+
+header h3 {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header h1 {
+  font-size: 71px;
   font-weight: 700;
-  line-height: 144px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header a {
+  background-color: white;
+  color: black;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 32px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+  header h3 {
+    font-size: 9px;
+  }
+  header h1 {
+    font-size: 35px;
+  }
+  header h2 {
+    font-size: 15px;
+  }
 }
