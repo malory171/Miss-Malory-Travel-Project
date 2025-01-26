@@ -172,6 +172,7 @@ main p {
 .grid-3-columns-2-rows {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  padding: 50px 50px;
   gap: 20px;
 }
 
@@ -225,6 +226,7 @@ footer p {
 @media (max-width: 900px) {
   header {
     padding: 60px 5px;
+    margin-bottom: 15px;
   }
   header h3 {
     font-size: 9px;
@@ -253,7 +255,6 @@ footer p {
     gap: 20px;
     grid-template-columns: 1fr;
     padding: 20px 0;
-    margin-top: 20px;
   }
   section.grid-2-columns {
     padding: 0 10px;
