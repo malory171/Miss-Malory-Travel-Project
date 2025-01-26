@@ -20,8 +20,12 @@ section.secondary {
   background-color: #081a34;
 }
 
+section.gallery {
+  max-width: 1400px;
+}
+
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
 }
 
 .text-center {
@@ -115,6 +119,11 @@ main p {
   background-color: black;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
 .card-body {
   padding: 22px 25px;
 }
@@ -138,13 +147,6 @@ main p {
   text-transform: uppercase;
 }
 
-footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/martinique-anse-michel-footer.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .grid {
   display: grid;
   padding: 80px 100px;
@@ -156,14 +158,33 @@ footer {
   gap: 64px;
 }
 
-.grid-3-columns-first-narrow {
-  grid-template-columns: 3fr 5fr 5fr;
-  gap: 64px;
+.card-header.grid {
+  gap: 0;
+  padding: 0;
 }
 
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
+  padding: 50px 50px;
+}
+
+.grid-3-columns-2-rows {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid-3-columns-first-narrow {
+  grid-template-columns: 3fr 5fr 5fr;
+  gap: 30px;
+}
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/martinique-anse-michel-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer h3 {
@@ -201,9 +222,9 @@ footer p {
   opacity: 0.9;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 900px) {
   header {
-    padding: 60px 0;
+    padding: 60px 5px;
   }
   header h3 {
     font-size: 9px;
@@ -229,10 +250,32 @@ footer p {
     font-size: 12px;
   }
   .grid {
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: 1fr;
-    padding: 20px 15px;
-    text-align: left;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  section.grid-2-columns {
+    padding: 0 10px;
+  }
+  section.secondary {
+    padding: 10px;
+  }
+  section.gallery {
+    padding: 10px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
+    height: 350px;
+  }
+  .card-body {
+    padding: 15px;
+  }
+  footer {
+    padding: 0 5px;
   }
   footer h3 {
     font-size: 16px;
